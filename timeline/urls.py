@@ -35,4 +35,3 @@ urlpatterns = [
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-urlpatterns += [url(r'^', views.FrontendAppView.as_view())]
