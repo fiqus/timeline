@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  db:
+    image: geographica/postgis:tasty_termite
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/data
+      - POSTGRES_PASSWD=postgres
+  web:
+    build: .
+    volumes:
+      - .:/code
+    ports:
+      - "8000:80"
+    depends_on:
+      - db
+volumes:
+  db-data:
+  media:
