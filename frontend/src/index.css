@@ -1,0 +1,71 @@
+html, body, #root{
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #625772;
+  background-color: #fefaec;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Amatic SC', cursive;
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction: row;
+}
+
+.content > div{
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.timeline_container{
+  overflow-y: auto;
+  margin-left: -10%;
+  padding-left: 10%;
+}
+
+.timeline_container > div{
+}
+
+h1{
+  font-size: 80px;
+  margin: 10px;
+}
+
+h2{
+  font-size: 40px;
+  margin: 5px;
+}
+
+.date{
+  font-size: 18px;
+}
+
+p{
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.title-container{
+  background-color: #a9eee6;
+  border-bottom: 10px solid #f38181;
+  color: #625772;
+}
+
+.timeline-marker{
+  width: 100%;
+}

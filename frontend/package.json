@@ -1,0 +1,37 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "normalize.css": "^8.0.1",
+    "pigeon-maps": "^0.12.1",
+    "pigeon-marker": "^0.3.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-event-timeline": "^1.6.3",
+    "react-grid-gallery": "^0.5.5",
+    "react-scripts": "3.0.0"
+  },
+  "proxy": "http://localhost:8000",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
