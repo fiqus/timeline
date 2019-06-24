@@ -3,6 +3,18 @@ import {Timeline, TimelineEvent} from "react-event-timeline";
 import Map from "pigeon-maps";
 import Marker from 'pigeon-marker'
 import Gallery from 'react-grid-gallery';
+import linkifyHtml from 'linkifyjs/html';
+
+const BOLD = /\*(\S(.*?\S)?)\*/gm;
+const ITALICS = /_(\S(.*?\S)?)_/gm;
+const STRIKE = /~(\S(.*?\S)?)~/gm;
+
+function formatDescription(desc){
+  let html = desc.replace(BOLD, '<span class="bold">$1</span>');
+  html = html.replace(ITALICS, '<span class="italic">$1</span>');
+  html = html.replace(STRIKE, '<span class="strike">$1</span>');
+  return linkifyHtml(html);
+}
 
 class Index extends React.Component {
   state = {
@@ -62,7 +74,7 @@ class Index extends React.Component {
 
                 >
                   <div className="description">
-                    {d.description.split("\n").map((d, i) => <p key={i}>{d}</p>)}
+                    {formatDescription(d.description).split("\n").map((d, i) => <p key={i} dangerouslySetInnerHTML={{__html: d}}/>)}
                   </div>
                   <Gallery enableImageSelection={false} images={d.images.map(({img, thumbnail}) => {
                     return {

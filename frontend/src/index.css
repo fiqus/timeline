@@ -56,8 +56,18 @@ h2{
 }
 
 p{
-  font-size: 22px;
-  margin-top: 10px;
+    font-size: 22px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+span.strike{
+    text-decoration-line: line-through;
+}
+span.italic{
+    font-style: italic;
+}
+span.bold{
+    font-weight: bold;
 }
 
 .title-container{
