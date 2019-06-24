@@ -26,11 +26,6 @@ COPY . .
 
 RUN cd frontend && yarn build
 
-RUN mkdir media
-RUN mkdir static
-
-RUN python manage.py collectstatic --noinput
-
 EXPOSE 80
 
 CMD ["supervisord", "-n"]

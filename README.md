@@ -16,6 +16,10 @@ A simple django app made to demonstrate building apis with django-rest-framework
 
         docker-compose exec web python manage.py migrate 
         
+1. Collect static files
+
+        docker-compose exec web python manage.py collectstatic 
+        
 1. Create a superuser (this user will have access to the admin interface)
 
         docker-compose exec web python manage.py createsuperuser
