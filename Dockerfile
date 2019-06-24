@@ -24,8 +24,6 @@ RUN cd frontend && yarn install
 
 COPY . .
 
-RUN cd frontend && yarn build
-
 EXPOSE 80
 
 CMD ["supervisord", "-n"]
