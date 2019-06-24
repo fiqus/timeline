@@ -19,7 +19,8 @@ A simple django app made to demonstrate building apis with django-rest-framework
 1. Collect static files and build frontend code
 
         docker-compose exec web python manage.py collectstatic
-        docker-compose exec -w /code/frontend web yarn build frontend 
+        docker-compose exec -w /code/frontend web yarn install
+        docker-compose exec -w /code/frontend web yarn build 
         
 1. Create a superuser (this user will have access to the admin interface)
 

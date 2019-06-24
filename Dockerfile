@@ -17,11 +17,6 @@ WORKDIR /code
 COPY requirements.txt /code/
 RUN pip install -r requirements.txt
 
-RUN mkdir frontend
-COPY frontend/yarn.lock frontend/package.json frontend/
-
-RUN cd frontend && yarn install
-
 COPY . .
 
 EXPOSE 80
