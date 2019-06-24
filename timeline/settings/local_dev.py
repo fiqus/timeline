@@ -4,6 +4,14 @@ MIDDLEWARE.append('timeline.middleware.dev_cors_middleware')
 
 SPATIALITE_LIBRARY_PATH = 'mod_spatialite.so'
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.contrib.gis.db.backends.spatialite',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+print(DATABASES)
+
 LOGGING = {
     'disable_existing_loggers': False,
     'version': 1,

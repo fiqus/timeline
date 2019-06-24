@@ -64,8 +64,14 @@ p{
   background-color: #a9eee6;
   border-bottom: 10px solid #f38181;
   color: #625772;
+  display: flex;
+  align-items: baseline;
 }
 
 .timeline-marker{
   width: 100%;
+}
+
+a{
+  color:#f38181;
 }

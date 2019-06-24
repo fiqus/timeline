@@ -32,6 +32,7 @@ class Index extends React.Component {
       <div className="main">
         <div className="title-container">
           <h1>Uk Trip 2019</h1>
+          <p>Timeline of events recorded when <a href="https://fiqus.coop/">Fiqus</a> and <a href="https://camba.coop/">Camba</a> visited the UK</p>
         </div>
         <div className={"content"}>
           <div className={"map_container"}>
