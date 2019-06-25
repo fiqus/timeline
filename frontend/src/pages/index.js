@@ -52,13 +52,10 @@ class Index extends React.Component {
               {data.map((d, i) =>
                 <Marker className={"test"}
                         key={i}
-                        anchor={d['lat_lng']}
-                        payload={1}
-                        onClick={({event, anchor, payload}) => {
-                        }}/>)}
+                        anchor={d['lat_lng']}/>)}
             </Map>
           </div>
-          <div className={"timeline_container"}>
+          <div className={"timeline_container"} onScroll={event => {console.log(event)}}>
             <Timeline
               style={{margin: "0 auto 0 0"}}
               lineStyle={{width: 10, backgroundColor: "#f38181", marginLeft:-16}}>
