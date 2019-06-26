@@ -47,6 +47,8 @@ h1, h2, h3, h4, h5, h6{
 h1{
   font-size: 80px;
   margin: 10px;
+  color: #fefaec;
+  text-shadow: 4px 4px 0px #f38181,8px 8px 0px #625772;
 }
 
 h2{
@@ -102,6 +104,7 @@ a{
 @media (max-width: 768px){
   h1{
     font-size: 30px;
+    text-shadow: 2px 2px 0px #f38181,4px 4px 0px #625772;
   }
   p{
     font-size: 15px;
