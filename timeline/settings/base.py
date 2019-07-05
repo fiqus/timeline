@@ -29,7 +29,8 @@ INSTALLED_APPS = [
 
     'sorl.thumbnail',
     'rest_framework',
-    'api'
+    'mapwidgets',
+    'api',
 ]
 
 MIDDLEWARE = [
